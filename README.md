@@ -7,7 +7,7 @@ The portfolio showcases my work as a full-stack web developer, including selecte
 
 ## Live Demo
 
-Visit the portfolio here:
+Visit the portfolio here: 
 
 **https://zayyandev.github.io**
 
