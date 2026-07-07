@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <title>
+      Zay Yan | Full-Stack Web Developer & Freelance Software Engineer
+    </title>
+
+    <meta
+      name="description"
+      content="Zay Yan is a full-stack web developer specializing in PHP, Laravel, Node.js, JavaScript, MySQL, and modern web applications. Available for freelance projects."
+    />
+
+    <meta
+      name="keywords"
+      content="Full Stack Developer, Freelance Developer, Laravel Developer, PHP Developer, Node.js Developer, JavaScript Developer, Web Developer, Myanmar Developer, Freelancer"
+    />
+
+    <meta name="author" content="Zay Yan" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://zayyandev.github.io/" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Zay Yan",
+        "jobTitle": "Full-Stack Web Developer",
+        "url": "https://zayyandev.github.io",
+        "image": "https://zayyandev.github.io/profile.png",
+        "sameAs": [
+          "https://facebook.com/yourusername",
+          "https://t.me/devzayyan"
+        ],
+        "knowsAbout": [
+          "PHP",
+          "Laravel",
+          "Node.js",
+          "JavaScript",
+          "MySQL",
+          "PostgreSQL",
+          "HTML",
+          "CSS",
+          "Tailwind",
+          "Bootstrap"
+        ]
+      }
+    </script>
+    <style>
+      :root {
+        --bg-main: #121110; /* Deep Premium Charcoal (Warm) */
+        --bg-card: #1c1a18; /* Soft Warm Slate for structure */
+        --accent-gold: #e5ad35; /* Sophisticated Matte Gold */
+        --text-primary: #f5f2eb; /* Soft Ivory White */
+        --text-secondary: #a39e93; /* Elegant Warm Gray */
+        --border-subtle: #292622; /* Clean Divider Line */
+        --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        letter-spacing: -0.01em;
+      }
+
+      body {
+        background-color: var(--bg-main);
+        color: var(--text-primary);
+        font-family: var(--font-sans);
+        line-height: 1.6;
+        padding: 0 1.5rem;
+      }
+
+      .wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      /* --- HERO SECTION --- */
+      .hero {
+        padding: 6rem 0 4rem 0;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      .avatar-wrapper {
+        position: relative;
+        flex-shrink: 0;
+      }
+
+      .avatar {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid var(--accent-gold);
+        padding: 4px;
+        background: var(--bg-main);
+      }
+
+      .hero-content h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+      }
+
+      .hero-content h1 span {
+        color: var(--accent-gold);
+      }
+
+      .hero-content p {
+        color: var(--text-secondary);
+        font-size: 1.1rem;
+        max-width: 600px;
+      }
+
+      /* --- SECTION GENERIC --- */
+      section {
+        padding: 5rem 0;
+        border-bottom: 1px solid var(--border-subtle);
+      }
+
+      section:last-of-type {
+        border-bottom: none;
+      }
+
+      .section-title {
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--accent-gold);
+        margin-bottom: 2.5rem;
+        font-weight: 600;
+      }
+
+      ul {
+        padding-left: 40px;
+      }
+
+      /* --- EXPERIENCE / CASE STUDY LAYOUT --- */
+      .case-studies {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .case-item {
+        background-color: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        padding: 2rem;
+        border-radius: 6px;
+        transition:
+          transform 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .case-item:hover {
+        transform: translateY(-2px);
+        border-color: #3d3933;
+      }
+
+      .case-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 0.75rem;
+      }
+
+      .case-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+
+      .case-date {
+        font-size: 0.85rem;
+        color: var(--text-secondary);
+      }
+
+      .case-desc {
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+      }
+
+      /* --- CORE SERVICES / SKILLS --- */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .service-card {
+        border-left: 2px solid var(--accent-gold);
+        padding: 0.5rem 0 0.5rem 1.5rem;
+      }
+
+      .service-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+      }
+
+      .service-card p {
+        color: var(--text-secondary);
+        font-size: 0.9rem;
+      }
+
+      /* --- CONTACT CTA --- */
+      .contact-section {
+        text-align: center;
+        padding: 6rem 0;
+      }
+
+      .contact-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      .contact-section p {
+        color: var(--text-secondary);
+        margin-bottom: 2.5rem;
+        font-size: 1.05rem;
+      }
+
+      /* Buttons Container */
+      .contact-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+
+      .btn-primary {
+        display: inline-block;
+        background-color: var(--accent-gold);
+        color: #121110;
+        padding: 0.85rem 2rem;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        border-radius: 4px;
+        transition: opacity 0.2s ease;
+      }
+
+      .btn-primary:hover {
+        opacity: 0.9;
+      }
+
+      /* Secondary style for other platforms to maintain hierarchy */
+      .btn-secondary {
+        display: inline-block;
+        background-color: transparent;
+        color: var(--text-primary);
+        border: 1px solid var(--border-subtle);
+        padding: 0.85rem 2rem;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        border-radius: 4px;
+        transition:
+          background-color 0.2s ease,
+          border-color 0.2s ease;
+      }
+
+      .btn-secondary:hover {
+        background-color: var(--bg-card);
+        border-color: var(--accent-gold);
+      }
+
+      /* --- FOOTER --- */
+      footer {
+        padding: 3rem 0;
+        text-align: center;
+        color: var(--text-secondary);
+        font-size: 0.85rem;
+        border-top: 1px solid var(--border-subtle);
+      }
+
+      /* --- RESPONSIVE LOGIC --- */
+      @media (max-width: 650px) {
+        .hero {
+          flex-direction: column;
+          text-align: center;
+          padding: 4rem 0 3rem 0;
+          gap: 1.5rem;
+        }
+        .hero-content h1 {
+          font-size: 2rem;
+        }
+        .case-header {
+          flex-direction: column;
+          gap: 0.25rem;
+        }
+        nav {
+          padding: 1rem 0;
+        }
+        .nav-links {
+          gap: 1rem;
+        }
+        .contact-buttons {
+          flex-direction: column;
+          align-items: stretch;
+          max-width: 300px;
+          margin: 0 auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="hero" id="about">
+        <div class="avatar-wrapper">
+          <img
+            src="zay-yan-full-stack-web-developer.png"
+            alt="Portrait of Zay Yan, Full-Stack Web Developer"
+            title="Zay Yan | Full-Stack Web Developer"
+            class="avatar"
+          />
+        </div>
+        <div class="hero-content">
+          <h1>Hi, I am <span>Zay Yan</span>.</h1>
+          <p>Full-Stack Web Developer</p>
+        </div>
+      </header>
+
+      <section id="about-me">
+        <h2 class="section-title">About Me</h2>
+        <div
+          class="case-desc"
+          style="max-width: 750px; font-size: 1.05rem; line-height: 1.75"
+        >
+          <p style="margin-bottom: 1.25rem">
+            I'm a full-stack web developer working as both a freelancer and an
+            indie developer. I enjoy building products from the ground up,
+            improving existing systems, and turning ideas into software that
+            people actually use.
+          </p>
+          <p style="margin-bottom: 1.25rem">
+            I'm naturally curious and a quick learner. I spend a lot of my free
+            time exploring new technologies, experimenting with different
+            approaches, and improving the way I build software. Learning isn't
+            something I do only when a project requires it—it's part of how I
+            stay sharp.
+          </p>
+          <p style="margin-bottom: 1.25rem">
+            As an indie developer, I also think beyond writing code. I care
+            about building products that are maintainable, reliable, and
+            practical. Every technical decision has a trade-off, and I enjoy
+            finding the balance between development speed, scalability, and
+            long-term value.
+          </p>
+          <p style="margin-bottom: 1.25rem">
+            At the end of the day, I simply like building software that solves
+            real problems and helps businesses move forward.
+          </p>
+        </div>
+      </section>
+
+      <section id="how-i-work">
+        <h2 class="section-title">How I Work</h2>
+        <div
+          class="case-desc"
+          style="max-width: 750px; font-size: 1.05rem; line-height: 1.75"
+        >
+          <p style="margin-bottom: 1.25rem">
+            I believe
+            <strong><em>technology is a tool, not the goal.</em></strong>
+          </p>
+          <p style="margin-bottom: 1.25rem">
+            I don't choose frameworks because they're trending. I choose them
+            because they're the right fit for the problem, the project, and the
+            business behind it. The best solution isn't always the one using the
+            newest technology—it's the one that's reliable, maintainable, and
+            delivers value.
+          </p>
+          <p style="margin-bottom: 1.25rem">
+            I'm always learning new tools, but I don't adopt them just because
+            they're popular. New technology should earn its place by making the
+            product better, not by making the tech stack look more impressive.
+          </p>
+          <p style="margin-bottom: 1.25rem">
+            If you already have a preferred stack, I'm happy to work with it. If
+            you don't, I'm comfortable making those decisions for you based on
+            what makes the most sense.
+          </p>
+          <p style="margin-bottom: 1.25rem">
+            And if your project requires a technology I haven't used before,
+            that doesn't automatically mean it's a blocker. In many cases, I can
+            build the solution you need with the tools I already know well,
+            saving development time while keeping the focus on what really
+            matters: solving your business problem.
+          </p>
+          <p style="margin-bottom: 1.25rem">
+            These are the technologies I use most often. I choose them based on
+            the needs of the project, not because they're the latest trend.
+          </p>
+          <p><strong>Frontend</strong></p>
+          <ul>
+            <li>HTML, CSS</li>
+            <li>Tailwind, Bootstrap</li>
+            <li>JavaScript</li>
+          </ul>
+          <br />
+          <p><strong>Backend</strong></p>
+          <ul>
+            <li>PHP, (Laravel)</li>
+            <li>NodeJS</li>
+            <li>Firebase</li>
+          </ul>
+          <br />
+          <p><strong>Database</strong></p>
+          <ul>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+            <li>SQLite</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="case-studies">
+          <div class="case-item">
+            <div class="case-header">
+              <div class="case-title">Automated Game Shop Platform</div>
+              <div class="case-date">2025</div>
+            </div>
+            <div class="case-desc">
+              <p style="margin-bottom: 1.25rem">
+                Built a full-stack web application that automates the sale of
+                digital game items for third-party sellers, enabling gamers to
+                purchase items 24/7 without manual seller intervention.
+              </p>
+              <p style="margin-bottom: 1rem">Key features:</p>
+              <ul style="margin-bottom: 1.25rem; padding-left: 20px">
+                <li>Automated order fulfillment</li>
+                <li>User authentication & guest mode support</li>
+                <li>Digital wallet system</li>
+                <li>Purchase & top-up history</li>
+                <li>Top-up request management</li>
+                <li>Real-time item pricing via admin panel</li>
+              </ul>
+              <p style="margin-bottom: 1rem">Technologies:</p>
+              <em>HTML • Tailwind CSS • JavaScript • Firebase • Supabase</em>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <h2>Get in Touch</h2>
+        <p>
+          If you’ve got an idea, a project, or something you want to build, feel
+          free to reach out. I’m open to freelance work, collaborations, or just
+          interesting conversations around software and product ideas.<br />
+          I usually respond pretty quickly.
+        </p>
+        <div class="contact-buttons">
+          <a href="mailto:dev.zayyan@domain.com" class="btn-primary"
+            >Email Me</a
+          >
+          <a
+            href="https://facebook.com/devzayyan"
+            target="_blank"
+            class="btn-secondary"
+            >Facebook</a
+          >
+          <a href="https://t.me/devzayyan" target="_blank" class="btn-secondary"
+            >Telegram</a
+          >
+        </div>
+      </section>
+
+      <footer>
+        <p>© 2026 Zay Yan. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+</html>
